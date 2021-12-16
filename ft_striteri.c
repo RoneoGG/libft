@@ -6,13 +6,13 @@
 /*   By: jdias-af <jdias-af@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/12 15:08:02 by jdias-af          #+#    #+#             */
-/*   Updated: 2021/12/12 17:58:42 by jdias-af         ###   ########.fr       */
+/*   Updated: 2021/12/16 16:57:54 by jdias-af         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_striteri(char *s, void (*f)(unsigned int, char*))
+void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 {
 	int	i;
 

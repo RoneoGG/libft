@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-static char **ft_makesplit(char const *s, char c, char **sstr)
+static char	**ft_makesplit(char const *s, char c, char **sstr)
 {
 	unsigned int	i;
 	unsigned int	j;
@@ -40,9 +40,9 @@ static char **ft_makesplit(char const *s, char c, char **sstr)
 	return (sstr);
 }
 
-static size_t word_count(char const *s, char c)
+static size_t	word_count(char const *s, char c)
 {
-	size_t count;
+	size_t	count;
 
 	if (!s)
 		return (0);
@@ -61,7 +61,7 @@ static size_t word_count(char const *s, char c)
 	return (count);
 }
 
-char **ft_split(char const *s, char c)
+char	**ft_split(char const *s, char c)
 {
 	char	**sstr;
 

@@ -6,7 +6,7 @@
 /*   By: jdias-af <jdias-af@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/12 15:08:42 by jdias-af          #+#    #+#             */
-/*   Updated: 2021/12/12 15:08:45 by jdias-af         ###   ########.fr       */
+/*   Updated: 2021/12/16 16:58:42 by jdias-af         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,15 +30,3 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 	}
 	return (srclenght);
 }
-/*
-int	main(void)
-{
-	char			wrd1[] = "Hello there, Venus";
-	char			wrd2[] = "aASDADAaa";
-	unsigned int	rs;
-	//int				r;
-	rs = ft_strlcpy(wrd1, wrd2, 14);
-	//r = strlcpy(wrd2, wrd1, 0);
-	printf("%s", wrd2);
-}
-*/

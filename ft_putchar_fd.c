@@ -6,13 +6,13 @@
 /*   By: jdias-af <jdias-af@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/12 15:03:51 by jdias-af          #+#    #+#             */
-/*   Updated: 2021/12/12 17:31:55 by jdias-af         ###   ########.fr       */
+/*   Updated: 2021/12/16 16:53:05 by jdias-af         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_putchar_fd(char c, int fd)
+void	ft_putchar_fd(char c, int fd)
 {
 	write(fd, &c, 1);
 }

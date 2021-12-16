@@ -6,7 +6,7 @@
 /*   By: jdias-af <jdias-af@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/12 15:08:50 by jdias-af          #+#    #+#             */
-/*   Updated: 2021/12/12 15:08:54 by jdias-af         ###   ########.fr       */
+/*   Updated: 2021/12/16 16:58:59 by jdias-af         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,14 +24,3 @@ size_t	ft_strlen(const char *str)
 	}
 	return (cont);
 }
-/*
-int	main(void)
-{
-	char	*frase;
-	int		lol;
-
-	frase = "balelas";
-	lol = ft_strlen(frase);
-	printf("%d", lol);
-}
-*/

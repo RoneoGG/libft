@@ -6,7 +6,7 @@
 /*   By: jdias-af <jdias-af@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/12 15:07:55 by jdias-af          #+#    #+#             */
-/*   Updated: 2021/12/14 19:30:33 by jdias-af         ###   ########.fr       */
+/*   Updated: 2021/12/16 16:57:41 by jdias-af         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,24 +30,9 @@ char	*ft_strdup(const char *s1)
 {
 	char	*str;
 
-	if (!(str = ((char*)malloc(sizeof(char) * (ft_strlen(s1) + 1)))))
+	str = malloc(sizeof(char) * (ft_strlen(s1) + 1));
+	if (!str)
 		return (NULL);
 	ft_strcpy(str, s1);
 	return (str);
 }
-/*
-#include<stdio.h>
-#include<string.h>
-
-int main()
-{
-    char source[] = "Copia esta";
-    // A copy of source is created dynamically
-    // and pointer to copy is returned.
-    char* target1 = strdup(source);
-	char* target2 = ft_strdup(source);
-    printf("%s\n", target1);
-	printf("%s\n", target2);
-    return (0);
-}
-*/

@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-static  int ft_beg(char *s, char *set)
+static int	ft_beg(char *s, char *set)
 {
 	int	i;
 	int	len;
@@ -22,13 +22,13 @@ static  int ft_beg(char *s, char *set)
 	while (i < len)
 	{
 		if (ft_strchr(set, s[i]) == 0)
-			break;
+			break ;
 		i++;
 	}
 	return (i);
 }
 
-static int  ft_end(char *s, char *set)
+static int	ft_end(char *s, char *set)
 {
 	int	i;
 	int	len;
@@ -38,27 +38,27 @@ static int  ft_end(char *s, char *set)
 	while (i < len)
 	{
 		if ((ft_strchr(set, s[len - i - 1])) == 0)
-			break;
+			break ;
 		i++;
 	}
 	return (len - i);
 }
 
-char *ft_strtrim(char const *s1, char const *set)
+char	*ft_strtrim(char const *s1, char const *set)
 {
-    int     end;
+	int		end;
 	int		beg;
-    char    *strtrimed;
+	char	*strtrimed;
 
-	end = ft_end((char*)s1, (char*)set);
+	end = ft_end((char *)s1, (char *)set);
 	beg = ft_beg((char *)s1, (char *)set);
 	if (!s1 || !set)
-        return (NULL);
+		return (NULL);
 	if (beg >= end)
 		return (ft_strdup(""));
 	strtrimed = (char *)malloc(sizeof(char) * (end - beg + 1));
 	if (strtrimed == NULL)
 		return (NULL);
-    ft_strlcpy(strtrimed, s1 + beg, end - beg + 1);
-    return (strtrimed);
+	ft_strlcpy(strtrimed, s1 + beg, end - beg + 1);
+	return (strtrimed);
 }
