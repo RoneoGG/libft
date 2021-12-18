@@ -6,7 +6,7 @@
 /*   By: jdias-af <jdias-af@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/12 15:07:00 by jdias-af          #+#    #+#             */
-/*   Updated: 2021/12/18 15:03:16 by jdias-af         ###   ########.fr       */
+/*   Updated: 2021/12/18 16:20:00 by jdias-af         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 int	ft_atoi(const char *str)
 {
-	int	i;
-	int	count;
-	int	transf;
+	int					i;
+	int					count;
+	unsigned long int	transf;
 
 	i = 0;
 	count = 1;
