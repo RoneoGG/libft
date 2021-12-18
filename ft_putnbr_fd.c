@@ -6,7 +6,7 @@
 /*   By: jdias-af <jdias-af@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/12 18:16:28 by jdias-af          #+#    #+#             */
-/*   Updated: 2021/12/18 15:07:04 by jdias-af         ###   ########.fr       */
+/*   Updated: 2021/12/18 19:45:19 by jdias-af         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ void	ft_putnbr_fd(int n, int fd)
 			ft_putchar_fd('-', fd);
 			n = n * -1;
 		}
-		if (n >= 9)
+		if (n >= 10)
 		{
 			ft_putnbr_fd(n / 10, fd);
 		}
