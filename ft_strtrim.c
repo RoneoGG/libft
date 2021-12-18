@@ -49,11 +49,11 @@ char	*ft_strtrim(char const *s1, char const *set)
 	int		end;
 	int		beg;
 	char	*strtrimed;
-
-	end = ft_end((char *)s1, (char *)set);
-	beg = ft_beg((char *)s1, (char *)set);
+	
 	if (!s1 || !set)
 		return (NULL);
+	end = ft_end((char *)s1, (char *)set);
+	beg = ft_beg((char *)s1, (char *)set);
 	if (beg >= end)
 		return (ft_strdup(""));
 	strtrimed = malloc(sizeof(char) * ((end - beg) + 1));
