@@ -50,7 +50,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 	int		beg;
 	char	*strtrimed;
 
-	if (!s1 || !set)
+	if (!s1)
 		return (NULL);
 	end = ft_end((char *)s1, (char *)set);
 	beg = ft_beg((char *)s1, (char *)set);
