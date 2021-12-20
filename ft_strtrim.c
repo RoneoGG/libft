@@ -49,7 +49,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 	int		end;
 	int		beg;
 	char	*strtrimed;
-	
+
 	if (!s1 || !set)
 		return (NULL);
 	end = ft_end((char *)s1, (char *)set);
